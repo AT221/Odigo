@@ -1,0 +1,72 @@
+@import '../../SASS/Variables/_Variables.scss';
+
+
+.Benefits_Container{
+    @include center();
+    min-height: 40rem;
+    margin: -20% 0 0 11%;
+    height: 40rem;
+    background-color: $fontColorWhite;
+    box-shadow: $boxShadow;
+  
+
+.title{
+    padding-top: 5rem;
+    margin-left: 6rem;
+}
+.lists{
+    display: inline-flex;
+    align-items: center;
+    padding: 7% 0 0 10%;
+    max-width: 90%;
+    width: 90%;
+    ul{
+        max-width: 25rem;
+        list-style-type: none;
+        :last-child{
+            color: $btnColor;
+            font-size: $fontSize;
+            font-family: $fontFamily;
+            cursor: pointer;
+        }
+        li:nth-of-type(2){
+            font-size: $fontSize;
+            font-weight: bold;
+            
+        }
+    }
+    .midList{
+        padding: 0 5%;
+    }
+    li{
+        padding: 2vh;
+    }
+    span{
+        padding-left: $spanSpace;
+    }
+    
+}
+}
+
+
+@media only screen and (min-width: 2500px){
+.Benefits_Container{
+    max-width: 60%;
+    margin-left: 20%;
+    
+    .title{
+        padding-top: 5rem;
+        margin-left: 9rem;
+    }
+    .lists{
+        padding-top: 5%;
+        .tower{
+            margin-right: 15%;
+        }
+        .store{
+            margin-left: 15%;
+        }
+    }
+}
+
+}

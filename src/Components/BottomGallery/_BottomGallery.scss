@@ -1,0 +1,108 @@
+@import '../../SASS/Variables/_Variables.scss';
+
+.btmContain{
+    @include center();
+    flex-wrap: wrap;
+    margin-top: -6%;
+ 
+    .titleHeading{
+        @include heading;
+        font-size: 24px;
+    }
+    hr{
+        @include hr;
+    }
+    
+    .figContainer{
+        display: flex;
+        width: 100%;
+    
+        figure{
+            max-width: 77.5%;
+        }
+  
+        .btmImg{
+            width: 347px;
+            height: 340px;
+            object-fit: cover;
+            object-position: 0% 100%;
+        }
+        .middleFig{
+            margin: 0 16%;
+        }
+        .socialConatiner{
+            display: flex;
+            width: 100%;
+
+            ul{
+                padding-top: 3%;
+                margin-top: -12.7%;
+                width: 99.8%;
+                height: 4.5vh;
+                background-color: rgba(0, 0, 0, 0.562);
+                line-height: 1%;
+                
+                li{
+                    vertical-align: middle;
+                    color: $fontColorWhite;
+                    display: inline-flex;
+                    padding: 0 1.5%;
+                }
+                
+                .picTitle{
+                    @include bottomTitles(0 35% 0 5%);
+                }
+                .smallerTitle{
+                    @include bottomTitles(0 40% 0 5%);
+                }
+        }
+        }
+        button{
+            @include buttons(16px, 5rem, 2rem);
+            color:rgba(255, 255, 255, 0.836);
+            margin-bottom:15%;
+            text-transform: $buttonUpper;
+            width: 25%;
+            font-size: 15px;
+            font-weight: bold;
+            
+        }
+       .txtBody{
+           padding: 5% 0;
+           font-size: $fontSize;
+           
+       }
+        }
+    }
+        
+        @media only screen and (min-width: 2500px){
+         .btmContain{
+             .figContainer{
+                .btmImg{
+                    width: 460px;
+                    height: 440px;
+                    object-fit: cover;
+                    object-position: 0% 100%;
+                }
+
+                .middleFig{
+                    margin: 0 16%;
+                }
+                .socialConatiner{
+                    ul{
+                        height: 4.3vh;
+                        .picTitle{
+                            @include bottomTitles(0 47% 0 5%);
+                        }
+                        .smallerTitle{
+                            @include bottomTitles(0 50% 0 5%);
+                        }
+                        
+                    }
+                }
+                
+            }
+            
+            
+        }
+    }

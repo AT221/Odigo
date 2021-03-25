@@ -1,0 +1,42 @@
+$fontColorWhite : rgb(255, 255, 255);
+$fontColorWhiteTrans : rgba(255, 255, 255, 0.753);
+$btnColor: rgb(0, 119, 255);
+$boxShadow: 10px 5px 18px  rgba(94, 91, 91, 0.2);
+$spanSpace: 2vh;
+$logoFont: 'Corben', cursive , serif;
+$buttonUpper: uppercase;
+$fontSize: 18px;
+$fontFamily: 'Arial', Helvetica, sans-serif;
+
+@mixin center {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@mixin buttons($fontSize, $width, $height ){
+        display: block;
+        font-size: $fontSize;
+        border-color: $btnColor;
+        width: $width;
+        height: $height;
+        color: $fontColorWhite;
+        background-color: $btnColor;
+        cursor: pointer;
+}
+
+@mixin heading {
+    display: inline-flex;
+    margin: 14% 0 0 0;
+    width: 100%;
+}
+
+@mixin hr{
+    border-bottom: 1px solid $btnColor;
+    width: 15%;
+    margin: .5rem 0 2rem 0;
+}
+
+@mixin bottomTitles($padding){
+    padding: $padding;
+    font-size: 26px;
+}

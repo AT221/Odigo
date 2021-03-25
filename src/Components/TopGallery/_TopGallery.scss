@@ -1,0 +1,68 @@
+@import '../../SASS/Variables/_Variables.scss';
+
+.topContainer{
+  @include center;
+   
+  .topTitle{
+@include heading;
+        .title{
+            width: 50%;
+            min-width: 40%;
+            h3{
+                font-size: 24px;
+                width: 100%;
+            }
+        }
+        .viewAll{
+            width: 50%;
+            p{
+                width: 20%;
+                 margin-left:83%;
+                color: $btnColor;
+                font-size: $fontSize;
+                font-family: $fontFamily;
+                cursor: pointer;
+            }
+        }
+    }
+        
+    hr{
+@include hr;
+    }
+    .figContainer{
+        width: 100%;
+        .topFigs{
+            display: inline-flex;
+          
+            img{
+                padding: 1% .5%;
+                width: 100%;
+                max-height: 80%;;
+                filter: brightness(70%);
+            }
+        }
+
+        .bottomFigs{
+            margin-top: -7%;
+            display: inline-flex;
+            img{
+                padding: 1% 1%;
+                width: 100%;
+                max-height: 90%;
+                filter: brightness(70%);
+            }
+        }
+    }
+
+
+figcaption{
+      filter: brightness(100%);
+      margin: -9vh 0 0 10vh;
+      font-size: 36px;
+      color: $fontColorWhite;
+      font-weight: bold;
+  }
+  span{
+    padding-left: $spanSpace;
+}
+}

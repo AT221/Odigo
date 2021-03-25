@@ -1,0 +1,36 @@
+@import '../../SASS/Variables/_Variables.scss';
+
+.body_Container{
+    @include center();
+    padding-top: 8rem;
+
+.temple , .hall{
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+    img{
+        width: 50%;
+        height: 40vh;
+        object-fit: cover;
+    }
+    figcaption{
+        width: 50%;
+        margin: 7% 0 0 2%;
+    }
+    
+        .midTxt{
+            padding:4vh 0;
+            font-family: $fontFamily;
+        }
+      p:last-child{
+            color: $btnColor;
+            font-size: $fontSize;
+            font-family: $fontFamily;
+            cursor: pointer;
+        }
+        span{
+            padding-left: $spanSpace;
+        }
+}
+    
+}

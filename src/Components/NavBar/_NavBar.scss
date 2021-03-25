@@ -1,0 +1,114 @@
+
+@import '../../SASS/Variables/_Variables.scss';
+
+
+
+.landing{
+    background: url('../Images/SunSet.png');
+    background-color: rgba(0, 0, 0, 0.281);
+    background-blend-mode: overlay;
+    min-height: 150vh;
+    background-size: cover;
+    padding: 0rem 5rem;
+    z-index: 0;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 20vh;
+        flex-wrap:inherit;
+        
+    }
+
+    .logo{
+        display: block;
+        color: $fontColorWhite;
+        padding-left: 17.65%;
+        font-family: $logoFont;
+        font-size: 32px;
+        letter-spacing: 1px;
+        padding-right: 1%;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        list-style: none;
+        display: flex;
+        margin-right: 14.10%;
+        flex-wrap: wrap;
+        padding-left: 1%;
+       
+    }
+    
+    .nav-links li{
+        font-size: $fontSize;
+        font-family: $fontFamily;
+        display: inline-block;
+        padding-left: 8rem;
+        padding-top: 2%;
+        color: $fontColorWhiteTrans;
+        cursor: pointer;
+    }
+
+}
+
+
+.Heading_Container{
+    
+    padding: 10rem 10rem;
+    margin: 5% 0 0 8%;
+    
+    h1{
+        font-size: 44px;
+        color: $fontColorWhite;
+        max-width: 60%;
+        text-shadow: 1px 2px black;
+    }
+    .text{
+        width: 50%;
+    }
+    p{
+        font-size: $fontSize;
+        font-family: $fontFamily;
+        max-width: 100%;
+        color: $fontColorWhite;
+        text-shadow: 1px 2px black;
+        
+    }
+    .inputs{
+        
+        padding: 5vh;
+        li{
+            display: inline-flex;
+            padding-bottom: 5vh;
+            
+        }
+        
+    }
+    button :hover{
+        background-color: orange;
+    }
+    button{
+        
+        @include buttons(16px, 7rem, 2.5rem);
+        text-transform: $buttonUpper;
+    
+    }
+
+    input{
+        font-size: 1.5rem;
+        width: 23rem;
+        margin: 2vh;
+        text-align: center;
+        background: transparent;
+        border: transparent;
+        border-bottom: 2px solid $fontColorWhite;
+        
+    }
+    ::placeholder {
+        color: $fontColorWhite;
+        opacity: .7;
+    }
+}
+
+
