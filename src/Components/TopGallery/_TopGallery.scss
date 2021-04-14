@@ -36,6 +36,8 @@
         
     }
     .bottomFigs{
+        margin-top: 3vh;
+        padding-top: 3vh;
         @include gallery(26vw, 30vh);
         .midImg{
             margin-bottom: 12%;
@@ -49,12 +51,11 @@
     
     figcaption{
         filter: brightness(100%);
-        margin: -20vh 0 0 10vh;
+        margin: -15vh 0 0 6vh;
         position: relative;
         font-size: 36px;
         color: $fontColorWhite;
         font-weight: bold;
-        padding: 6vh 0;
     }
   span{
     padding-left: $spanSpace;
