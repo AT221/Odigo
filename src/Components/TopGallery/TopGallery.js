@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import './_TopGallery.scss';
 import Fuji from '../Images/Mountain.png';
 import Kyoto from '../Images/BackStreet.png';
@@ -21,9 +21,9 @@ const TopGallery = ()=>{
             </div>
             <hr></hr>
 
-            <div className='figContainer'>
+         <div className='figContainer'>
                
-                <div className='topFigs'>
+            <div className='topFigs'>
                 <figure>
                     <img className='fuji' src={Fuji}/>
                     <figcaption>Mount Fuji</figcaption>
@@ -32,22 +32,22 @@ const TopGallery = ()=>{
                     <img  className='kyoto' src={Kyoto}/>
                     <figcaption>Kyoto</figcaption>
                 </figure>
-                </div>
+            </div>
 
-                <div className='bottomFigs'>
+            <div className='bottomFigs'>
                 <figure>
                     <img src={Tokyo}/>
-                    <figcaption>Tokyo</figcaption>
+                    <figcaption className='tokyo'>Tokyo</figcaption>
                 </figure>
                 <figure>
                     <img className='midImg' src={Niigata}/>
-                    <figcaption>Niigata</figcaption>
+                    <figcaption className='niigata' >Niigata</figcaption>
                 </figure>
                 <figure>
                     <img src={Sapporo}/>
-                    <figcaption>Sapporo</figcaption>
+                    <figcaption className='sapporo'>Sapporo</figcaption>
                 </figure>
-                </div>
+            </div>
             </div>
         </div>
     )

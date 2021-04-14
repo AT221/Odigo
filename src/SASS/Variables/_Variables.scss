@@ -40,3 +40,16 @@ $fontFamily: 'Arial', Helvetica, sans-serif;
     padding: $padding;
     font-size: 26px;
 }
+
+@mixin gallery ($width, $height){
+    display: flex;
+    flex-wrap: wrap;
+        figure{
+            flex:1;
+            img{
+                width: $width;
+                height: $height;
+                filter: brightness(70%);
+            }
+        }
+}

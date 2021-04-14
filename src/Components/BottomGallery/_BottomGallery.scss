@@ -2,9 +2,10 @@
 
 .btmContain{
     @include center();
+    
     flex-wrap: wrap;
     margin-top: -6%;
- 
+
     .titleHeading{
         @include heading;
         font-size: 24px;
@@ -18,42 +19,40 @@
         width: 100%;
     
         figure{
-            max-width: 77.5%;
+            flex: 1;
         }
   
         .btmImg{
-            width: 347px;
-            height: 340px;
+            width: 25.7vw;
+            height: 42.2vh;
             object-fit: cover;
             object-position: 0% 100%;
-        }
-        .middleFig{
-            margin: 0 16%;
+            flex-wrap: wrap;
         }
         .socialConatiner{
             display: flex;
-            width: 100%;
-
+        
             ul{
-                padding-top: 3%;
-                margin-top: -12.7%;
-                width: 99.8%;
-                height: 4.5vh;
+                height:3.3vh;
+                margin-top: -3.5vh;
+                width: 25.7vw;
                 background-color: rgba(0, 0, 0, 0.562);
-                line-height: 1%;
+                display: flex;
+                flex-wrap: wrap;
                 
                 li{
-                    vertical-align: middle;
+                    flex: 1;
                     color: $fontColorWhite;
-                    display: inline-flex;
-                    padding: 0 1.5%;
+                   list-style: none;
                 }
-                
                 .picTitle{
-                    @include bottomTitles(0 35% 0 5%);
+                    @include bottomTitles(0 14vw 0 3vw);
+                  width: 2%;
+                 
                 }
                 .smallerTitle{
-                    @include bottomTitles(0 40% 0 5%);
+                    @include bottomTitles(0 12vw 0 3vw);
+                    width: 2%;
                 }
         }
         }
@@ -62,7 +61,7 @@
             color:rgba(255, 255, 255, 0.836);
             margin-bottom:15%;
             text-transform: $buttonUpper;
-            width: 25%;
+            width: fit-content;
             font-size: 15px;
             font-weight: bold;
             
@@ -70,39 +69,15 @@
        .txtBody{
            padding: 5% 0;
            font-size: $fontSize;
-           
+           width: 20vw;
        }
         }
-    }
-        
-        @media only screen and (min-width: 2500px){
-         .btmContain{
-             .figContainer{
-                .btmImg{
-                    width: 460px;
-                    height: 440px;
-                    object-fit: cover;
-                    object-position: 0% 100%;
-                }
-
-                .middleFig{
-                    margin: 0 16%;
-                }
-                .socialConatiner{
-                    ul{
-                        height: 4.3vh;
-                        .picTitle{
-                            @include bottomTitles(0 47% 0 5%);
-                        }
-                        .smallerTitle{
-                            @include bottomTitles(0 50% 0 5%);
-                        }
-                        
-                    }
-                }
-                
-            }
-            
-            
+        ul :nth-child(2),  ul :nth-child(3), ul :nth-child(4), ul :nth-child(5) {
+            padding: 2% 0;
+        }
+        .middleFig{
+            padding: 0 1vw;
         }
     }
+    
+    

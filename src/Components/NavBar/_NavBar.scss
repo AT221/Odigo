@@ -9,7 +9,7 @@
     background-blend-mode: overlay;
     min-height: 150vh;
     background-size: cover;
-    padding: 0rem 5rem;
+    padding: 0 3vw;
     z-index: 0;
     nav{
         display: flex;
@@ -23,18 +23,19 @@
     .logo{
         display: block;
         color: $fontColorWhite;
-        padding-left: 17.65%;
+ 
+        padding-left: 10vw;
         font-family: $logoFont;
         font-size: 32px;
         letter-spacing: 1px;
-        padding-right: 1%;
+        padding-right: 1vw;
         cursor: pointer;
     }
 
     .nav-links{
         list-style: none;
         display: flex;
-        margin-right: 14.10%;
+        margin-right: 5vw;
         flex-wrap: wrap;
         padding-left: 1%;
        
@@ -44,7 +45,7 @@
         font-size: $fontSize;
         font-family: $fontFamily;
         display: inline-block;
-        padding-left: 8rem;
+        padding-left: 6.5vw;
         padding-top: 2%;
         color: $fontColorWhiteTrans;
         cursor: pointer;
@@ -56,6 +57,7 @@
 .Heading_Container{
     
     padding: 10rem 10rem;
+    padding: 18vh 3vw;
     margin: 5% 0 0 8%;
     
     h1{
@@ -67,6 +69,11 @@
     .text{
         width: 50%;
     }
+
+    .text h1{
+        padding-bottom: 6vh;
+    }
+
     p{
         font-size: $fontSize;
         font-family: $fontFamily;
@@ -76,23 +83,22 @@
         
     }
     .inputs{
-        
-        padding: 5vh;
+     
+        width: 100%;
+        padding: 10vh 0;
+
         li{
             display: inline-flex;
             padding-bottom: 5vh;
-            
         }
-        
     }
     button :hover{
         background-color: orange;
     }
+
     button{
-        
         @include buttons(16px, 7rem, 2.5rem);
         text-transform: $buttonUpper;
-    
     }
 
     input{
@@ -103,8 +109,8 @@
         background: transparent;
         border: transparent;
         border-bottom: 2px solid $fontColorWhite;
-        
     }
+
     ::placeholder {
         color: $fontColorWhite;
         opacity: .7;

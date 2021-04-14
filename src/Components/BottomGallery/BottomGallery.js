@@ -48,9 +48,9 @@ const BottomGallery = () => {
                     <figcaption className='socialConatiner'>
                         
                     <ul>
-                        <li className='picTitle'>Niigata</li> 
+                        <li className='picTitle'>Niigata</li>
                         <li>400</li>
-                        <li ><img src={Heart}/></li>
+                        <li><img src={Heart}/></li>
                         <li>150</li>
                         <li><img src={Chat}/></li>
                     </ul>

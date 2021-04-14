@@ -12,15 +12,15 @@ footer{
     }
 
     .bottom_Container{
+        padding: 9vh 0;
         background-color: #0F1D28;
         color: $fontColorWhite;
         height: 300px;
         width: 100%;
-        margin-top: -1%;
-        margin-bottom: 1%;
+        margin: -1% 0 1% 0;
         h2{
             font-size: 50px;
-           padding-right: 15%;
+           padding-right: 11.5vw;
            font-family: $logoFont;
         }
     }
@@ -28,14 +28,13 @@ footer{
         font-family: $fontFamily;
         font-size: $fontSize;
         list-style: none;
-        padding: 0 5%;
         font-family: $fontFamily;
         cursor: pointer;
+        flex: 1;
     }
     .main_List{
-        display: inline-flex;
+        display: flex;
         flex-wrap: wrap;
-        margin: 5% 0% 0 20%;
-        width: 100%;
+        margin: 0 0% 0 20%;
     }
 }
